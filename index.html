@@ -193,7 +193,7 @@
   </div>
 <div>
   <!--/telefonia-->
-  <!--/Inclusion-->
+  <!--Inclusion-->
 <section id="inclusion" class="container">
     <div class="divider-new wow fadeIn">
       <h2 class="h2-responsive">Inclusión Social</h2>
@@ -205,8 +205,85 @@
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit explicabo assumenda eligendi ex exercitationem harum deleniti quaerat beatae ducimus dolor voluptates magnam, reiciendis pariatur culpa tempore quibusdam quidem, saepe eius.
   </p>
 </div>
+<div class="col-md-6">
+  <img class="img-responsive" src="img/parallax.jpg" style="width:100%;">
+</div>
+</section>
+  <!--/Inclusion-->
+<!--Contacto-->
+<section id="contacto" class="container">
+  <div class="divider-new wow fadeIn">
+    <h2 class="h2-responsive">Contacto</h2>
+  </div>
+  <div class="col-md-6">
+    <div id="map"></div>
+  </div>
+  <div class="col-md-6">
+    <div class="md-form">
+        <i class="fa fa-user fa-2x"></i>
+        <input placeholder="Nombre y Apellido" type="text" id="name" class="form-control">
+    </div>
+
+    <div class="md-form">
+        <i class="fa fa-envelope fa-2x"></i>
+        <input placeholder="Email"  type="text" id="email" class="form-control">
+    </div>
+
+    <div class="md-form">
+        <i class="fa fa-whatsapp fa-2x"></i>
+        <input placeholder="Número de WhatsApp" type="number" id="numero" class="form-control">
+    </div>
+    <div class="md-form">
+        <i class="fa fa-pencil fa-2x"></i>
+        <textarea placeholder="Requerimiento" type="text" id="form76" class="md-textarea"></textarea>
+    </div>
+    <button type="submit" value="Submit" class="btn btn-primary">Enviar</button>
+
+  </div>
+
 </section>
 
+<!--/Contacto-->
+<!--Footer-->
+<footer class="page-footer blue center-on-small-only">
+
+    <!--Footer Links-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-6">
+                <h5 class="title">Footer Content</h5>
+                <p>Here you can use rows and columns here to organize your footer content.</p>
+            </div>
+            <!--/.First column-->
+
+            <!--Second column-->
+            <div class="col-md-6">
+                <h5 class="title">Links</h5>
+                <ul>
+                    <li><a href="#!">Link 1</a></li>
+                    <li><a href="#!">Link 2</a></li>
+                    <li><a href="#!">Link 3</a></li>
+                    <li><a href="#!">Link 4</a></li>
+                </ul>
+            </div>
+            <!--/.Second column-->
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            © 2015 Copyright: <a href="http://www.MDBootstrap.com"> MDBootstrap.com </a>
+
+        </div>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
 
 
 
@@ -235,6 +312,22 @@
 <script>
   new WOW().init();
 </script>
+
+<!--map-->
+<script type="text/javascript">
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 8
+  });
+}
+
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKlQ9jz5DIwrW84wIDPlc6w8V8_TT8Uro&callback=initMap">
+    </script>
 
 </body>
 
