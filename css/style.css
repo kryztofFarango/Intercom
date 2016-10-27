@@ -6,24 +6,27 @@ header,
     height: 100%;
 }
 /* Navigation*/
+body{
+  background-color: #f9f9f9;
+}
 
 .navbar {
-    background-color: transparent;
+  background-color: rgba(225, 225, 225,.5);
 }
 
 .top-nav-collapse {
-    background-color: #4285F4;
+    background-color: #00668e;
 }
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        background-color: #4285F4;
+        background-color: #00668e;
     }
 }
 /*Intro*/
 
 .view {
-    background: url("http://mdbootstrap.com/images/regular/people/img%20(62).jpg")no-repeat center center fixed;
+    background: url("img/InicioIntercom.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -56,10 +59,25 @@ header,
 }
 .parallax {
     /* The image used */
-    background-image: url("img/parallax.jpg");
+    background-image: url("img/Colombia_dos.jpg");
 
     /* Set a specific height */
     height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 13em!important;
+    color:white;
+}
+.telefonia {
+    /* The image used */
+    background-image: url("img/road.png");
+
+    /* Set a specific height */
+    height: 400px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -67,16 +85,36 @@ header,
     background-repeat: no-repeat;
     background-size: cover;
 }
-.telefonia {
-    /* The image used */
-    background-image: url("img/parallax.jpg");
+@media (max-width: 539px) {
+    .telefonia {
+        height: 100%;
+    }
+}
+.hm-black-light .full-bg-img{
+    background-color: rgba(0,0,0,.5)!important;
+}
+.divider-new::after, .divider-new::before {
+    content: '';
+    height: 1px;
+    background: #cccccc;
+}
+.hr-dark{
+  height: 1px;
+  background: #cccccc;
+}
+.icon{
+  color:#00668e;
+}
+.logo{
+  width: 100%;
+  padding-top: 5em;
+}
+@media (max-width: 539px) {
+    .logo {
+        height: 50% !important;
+    }
+}
 
-    /* Set a specific height */
-    height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.logo .movS{
+  padding-top: 10px;
 }
