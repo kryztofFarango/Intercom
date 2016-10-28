@@ -8,6 +8,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>Intercom EL tiempo es oro</title>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/progresstracker.js"></script>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
@@ -18,13 +21,42 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
 
+
+
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/ico.png" />
+<link rel="stylesheet" type="text/css" href="css/jquery.progresstracker.css">
+
+
 
 </head>
 
 <body>
+  <div class="bullets-container">
+    <ul class="section-bullets">
+      <li>
+        <a title="Quiénes Somos" class="desplaza" href="#quienes">
+          <span>Quiénes Somos</span>
+        </a>
+      </li>
+      <li>
+        <a title="Telefonía" class="desplaza" href="#telefonia">
+          <span>Telefonía</span>
+        </a>
+      </li>
+      <li>
+        <a title="inclusión" class="desplaza" href="#inclusion">
+          <span>Inclusión</span>
+        </a>
+      </li>
+      <li>
+        <a title="Contácto" class="desplaza" href="#contacto">
+          <span>Contácto</span>
+        </a>
+      </li>
+    </ul>
+  </div>
 
 
     <!-- Start your project here-->
@@ -45,31 +77,8 @@
                 <!--Navbar Brand-->
                 <img src="img/logo.png" style="width:180px; float:left;">
                 <!--Links-->
-                <ul class="nav navbar-nav"style="padding-top: 9px;">
-                    <li class="nav-item" style="padding-left: 10px;">
-                        <a class="nav-link" href="#quienes"><i class="fa fa-home" aria-hidden="true"></i>
-                           Quiénes Somos <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#telefonia"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
-                           Telefonía
-                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#inclusion"><i class="fa fa-users" aria-hidden="true"></i>
-                          Inclusión Social
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto"><i class="fa fa-send" aria-hidden="true"></i>
-                           Contacto
-                         </a>
-                    </li>
-                </ul>
-
                 <!--Navbar icons-->
-                <ul class="nav navbar-nav nav-flex-icons">
+                <ul class="nav navbar-nav nav-flex-icons" style="padding-top: 9px;">
                     <li class="nav-item">
                         <a class="nav-link"><i class="fa fa-facebook"></i></a>
                     </li>
@@ -80,6 +89,31 @@
                         <a class="nav-link"><i class="fa fa-instagram"></i></a>
                     </li>
                 </ul>
+                <ul class="nav navbar-nav"style="padding-top: 9px;float: right;">
+                    <li class="nav-item" style="padding-left: 10px;">
+                        <a class="nav-link desplaza " href="#quienes"><i class="fa fa-home" aria-hidden="true"></i>
+                           Quiénes Somos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link desplaza" href="#telefonia"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                           Telefonía
+                         </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link desplaza" href="#inclusion"><i class="fa fa-users" aria-hidden="true"></i>
+                          Inclusión Social
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link desplaza" href="#contacto"><i class="fa fa-send" aria-hidden="true"></i>
+                           Contacto
+                         </a>
+                    </li>
+                </ul>
+
+
+
             </div>
             <!--/.Collapse content-->
 
@@ -102,7 +136,9 @@
                             <p class="wow fadeInLeft" data-wow-delay="0.4s">Tendrás el poder de comunicarte con la más alta calidad
                               de servicio. Somos una empresa comprometida con sus clientes y fiéles creyentes de la inclusión social.</p>
                             <br>
-                            <a class="btn btn-primary btn-lg wow fadeInLeft" data-wow-delay="0.7s">Escríbenos</a>
+                            <a class="btn btn-primary btn-lg wow fadeInLeft" data-wow-delay="0.7s" data-toggle="modal" data-target="#myModal">Escríbenos</a>
+
+
                         </div>
                     </div>
                     <!--/.First column-->
@@ -111,12 +147,37 @@
                     <div class="col-lg-6">
 
                         <div class="embed-responsive embed-responsive-16by9 wow fadeInRight">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cTc9cHr6S9U" allowfullscreen></iframe>
+                            <div>
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cTc9cHr6S9U" allowfullscreen>
+                              </iframe>
+                            </div>
 
-                        </div>
 
 
                     </div>
+                    <div>
+                      <div class="col-md-3 col-sm-12 wow fadeInLeft" data-wow-delay="0.2s">
+                        <center>
+                          <img src="img/logos/Avantel.png" alt="" style="width: 100%; padding-top:25px;"/>
+                        </center>
+                      </div>
+                      <div class="col-md-3 col-sm-12 wow fadeInLeft" data-wow-delay="0.4s">
+                        <center>
+                          <img src="img/logos/claro.png" alt="" style="width: 74%; padding-top:25px;"/>
+                        </center>
+                      </div>
+                      <div class="col-md-3 col-sm-12 wow fadeInLeft" data-wow-delay="0.6s">
+                        <center>
+                          <img src="img/logos/lgo_movistar_at.png" alt="" style="width: 100%; padding-top:25px;" />
+                        </center>
+                      </div>
+                      <div class="col-md-3 col-sm-12 wow fadeInLeft" data-wow-delay="0.8s">
+                        <center>
+                          <img src="img/logos/Logo_Tigo.png" alt="" style="width: 49%; padding-top:25px;"/>
+                        </center>
+                      </div>
+                    </div>
+                </div>
                     <!--/Second column-->
                 </div>
             </div>
@@ -127,7 +188,7 @@
 </header>
 <!--/Navigation & Intro-->
 <!-- Start contenido-->
-<div style="height:40px;" id="quienes">
+<div style="height:40px;" id="quienes" class="scrollable-section" data-section-title="Quiénes Somos">
 </div>
 <div class="container" >
   <div class="divider-new wow fadeIn">
@@ -138,7 +199,7 @@
   basados en <br/>un servicio de calidad y compromiso con nuestros clientes y la sociedad</p>
   <strong>¿Quieres estar bien comunicado?</strong>
 <p>
-<button type="button" class="btn btn-default text-xs-cente">Escríbenos</button>
+<button type="button" class="btn btn-default text-xs-cente" data-toggle="modal" data-target="#myModal">Escríbenos</button>
 </p>
 </section>
 <section>
@@ -188,13 +249,12 @@
   <div>
 <!--/parallax-->
 <!--telefonia-->
-<div style="height:40px;" id="telefonia"></div>
+<div style="height:40px;" id="telefonia"class="scrollable-section" data-section-title="Telefonía"></div>
 <div class="container">
   <div class="divider-new wow fadeIn">
     <h2 class="h2-responsive">Telefonía</h2>
   </div>
 </div>
-<div class="row">
   <div class="telefonia">
     <div class="container">
         <div class="col-md-3 col-sm-12 wow fadeInLeft" data-wow-delay="0.2s">
@@ -219,11 +279,11 @@
         </div>
     </div>
   </div>
-</div>
+
   <!--/telefonia-->
   <!--Inclusion-->
-<div class="row">
-    <div style="height:40px;" id="inclusion"></div>
+
+    <div style="height:40px;" id="inclusion"class="scrollable-section" data-section-title="inclusión"></div>
   <section class="container">
       <div class="divider-new wow fadeIn">
         <h2 class="h2-responsive">Inclusión Social</h2>
@@ -235,11 +295,10 @@
         <img class="img-responsive" src="img/inlcusion.png" style="width:100%;">
       </div>
   </section>
-</div>
 
   <!--/Inclusion-->
 <!--Contacto-->
-  <div style="height:40px;" id="contacto"></div>
+  <div style="height:40px;" id="contacto" class="scrollable-section" data-section-title="Contácto"></div>
 <section class="container">
   <div class="divider-new wow fadeIn">
     <h2 class="h2-responsive">Contacto</h2>
@@ -302,14 +361,55 @@
     <div class="footer-copyright">
         <div class="container-fluid">
             © 2016 Copyright: Intercom
-
         </div>
     </div>
     <!--/.Copyright-->
 
 </footer>
 <!--/.Footer-->
+<!--Modal-->
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Contáctanos</h4>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+              <div class="md-form wow fadeIn" data-wow-delay="0.2s">
+                  <i class="fa fa-user fa-2x"></i>
+                  <input placeholder="Nombre y Apellido" type="text" id="name" class="form-control ">
+              </div>
 
+              <div class="md-form wow fadeIn" data-wow-delay="0.4s">
+                  <i class="fa fa-envelope fa-2x"></i>
+                  <input placeholder="Email"  type="text" id="email" class="form-control">
+              </div>
+
+              <div class="md-form wow fadeIn" data-wow-delay="0.6s">
+                  <i class="fa fa-phone fa-2x"></i>
+                  <input placeholder="Teléfono" type="number" id="numero" class="form-control">
+              </div>
+              <div class="md-form wow fadeIn" data-wow-delay="0.8s">
+                  <i class="fa fa-pencil fa-2x"></i>
+                  <textarea placeholder="Mensaje" type="text" id="form76" class="md-textarea"></textarea>
+              </div>
+              <button type="submit" value="Submit" class="btn btn-primary wow fadeIn" data-wow-delay="0.9s">Enviar</button>
+
+            </div>
+
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!-- /.Live preview-->
+<!--/modal-->
 
 
 
@@ -322,8 +422,7 @@
 
     <!-- SCRIPTS -->
 
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
 
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/tether.min.js"></script>
@@ -353,6 +452,13 @@ function initMap() {
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKlQ9jz5DIwrW84wIDPlc6w8V8_TT8Uro&callback=initMap">
     </script>
+    <script>
+        (function() {
+            //Standard initialisation
+            $('body').desplaza();
+        })();
+    </script>
+
 
 </body>
 
