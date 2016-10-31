@@ -220,3 +220,13 @@ body{
     transition-duration: .3s;
     transition-delay: 0.5s;
 }
+
+
+/*Shadow*/
+
+  .shadow {
+
+    color: #5a7689;
+    text-shadow: 0px 2px 2px #cccccc;
+  }
+}
